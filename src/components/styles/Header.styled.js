@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
   background: ${({ theme }) => theme.colors.header};
-  background-image: url('./images/bg-hero-desktop.svg');
+  background-image: url(${({ theme }) =>
+    theme.layout.desktop
+      ? './images/bg-hero-desktop.svg'
+      : './images/bg-hero-mobile.svg'});
   background-size: auto auto;
   overflow: hidden;
 `;
