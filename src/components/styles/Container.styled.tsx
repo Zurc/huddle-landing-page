@@ -6,7 +6,7 @@ interface IContainer {
 
 export const Container = styled.div<IContainer>`
   position: relative;
-  width: 1280px;
+  width: ${({ theme }) => theme.layout.desktop};
   max-width: 100%;
   padding: 20px;
   margin: 0 auto;
