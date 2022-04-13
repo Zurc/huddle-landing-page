@@ -16,7 +16,7 @@ const theme = {
   },
   layout: {
     mobile: '768px',
-    desktop: '1440px',
+    desktop: '1200px',
   },
 };
 
