@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
   background: ${({ theme }) => theme.colors.header};
-  background-image: url(${({ theme }) =>
-    theme.layout.desktop
-      ? './images/bg-hero-desktop.svg'
-      : './images/bg-hero-mobile.svg'});
+  background-image: url('./images/bg-hero-mobile.svg');
   background-size: auto auto;
   overflow: hidden;
+
+  @media (min-width: ${({ theme }) => theme.layout.mobile}) {
+    background-image: url('./images/bg-hero-desktop.svg');
+  } ;
 `;
 
 export const Nav = styled.nav`
