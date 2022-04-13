@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const StyledSocialIcons = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 16px;
 
   li {
     list-style: none;

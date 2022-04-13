@@ -38,8 +38,8 @@ export const StyledFooter = styled.footer`
     .first-col {
       display: flex;
       flex-direction: column;
-      width: 400px;
-      margin-right: 40px;
+      flex: 2;
+      margin-right: 100px;
     }
     p {
       text-align: left;
