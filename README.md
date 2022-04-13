@@ -2,6 +2,8 @@
 
 This was a [Frontend Mentor challenge](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100) to practice [styled components](https://styled-components.com) with react
 
+![huddle challenge](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/wn3pttg6nwgymod2iqxy.jpg)
+
 You can see the deployed project [here](https://zurc.github.io/huddle-landing-page/)
 
 ## Styled Components - my views
