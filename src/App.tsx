@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+import Card from './components/Card';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { Container } from './components/styles/Container.styled';
+import Global from './components/styles/Global.styled';
+import content from './content';
+import Newsletter from './components/Newsletter';
+
+const theme = {
+  colors: {
+    header: '#ebfbff',
+    body: '#fff',
+    footer: 'hsl(192, 100%, 9%)',
+  },
+  layout: {
+    mobile: '768px',
+    desktop: '1440px',
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Global />
+      <Header />
+      <Container context="main-content">
+        {content.map((item, index) => {
+          if (index % 2) {
+            return (
+              <Card key={index} item={item} direction="row-reverse"></Card>
+            );
+          } else {
+            return <Card key={index} item={item} direction="row"></Card>;
+          }
+        })}
+        <Newsletter />
+      </Container>
+      <Footer />
+    </ThemeProvider>
   );
 }
 
