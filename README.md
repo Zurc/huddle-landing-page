@@ -12,11 +12,16 @@ You can see the deployed project [here](https://zurc.github.io/huddle-landing-pa
 
 ## Styled Components - my views
 
-It's a nice way to style a React app project. 
+It's a nice way to style a React app project.
+
 Based on tagged template literals you can use normal CSS properties instead of JS.
+
 You can create components and pass props using unique class names.
+
 You can easily create a theme; conditionally add/remove styles (dynamic styling); extend styles.
+
 It offers the possibility to still use classNames when needed
+
 It handles automatic vendor prefixing.
 
 # Getting Started
